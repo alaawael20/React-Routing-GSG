@@ -1,0 +1,32 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.navBar .logo a {
+    text-decoration: none;
+    color: black;
+}
+.navBar .navs {
+    display: flex;
+}
+@media (max-width: 550px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar .navs {
+        margin-top: 15px;
+    }
+}
+.navBar .navs a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+.navBar .navs a li {
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+}
